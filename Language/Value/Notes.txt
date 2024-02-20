@@ -1,0 +1,7 @@
+#Empty Values
+1. There are two special values, written null and undefined, that are used to dentot the absence of a meaningful value.
+Both are treated as interchangable. 
+2. JavsScript uses fixed number of bits, 64 of them, to store a single number value.
+Total of 2^64 individual digits can be represented.
+For a very big or very small number you may use scientific notation.
+2.998e8 = 299,800,000

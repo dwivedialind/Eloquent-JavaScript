@@ -1,0 +1,15 @@
+1. A fragment of code that produces a value is called expression.  Every value that is written literally (such as 22 or "psychoanalysis") is an expression.
+ An expression between parentheses is also an expression, as is a binary operator applied to two expressions or a unary operator applied to one.
+
+2. If an expression corresponds to a sentence fragment, a Javascript statement corresponds to a full sentence. A program is a list of statements.
+The simplest kind of statement is expression with semicolon after it. 
+
+#Bindings
+1. To catch and hold values, JavaScript provides a thing called a binding, or variable:
+The special word (keyword) let, var, const, indicates that this sentence is going to define a binding.
+The value of empty binding is undefined. 
+
+2. Bindings Names must not start with number. A binding name may include dollar signs($) or underscores(_) but no other punctuation or special characters.
+
+3. The prompt function isn’t used much in modern web programming, mostly because you have no control over the way the resulting dialog looks, but can be helpful in toy programs and experiments.
+Result of prompt is string value. 
