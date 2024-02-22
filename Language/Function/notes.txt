@@ -1,0 +1,64 @@
+1. Variables declared by let are only available inside the block where they're defined. Variables declared by var are available throughout the function in which they're declared
+2. In JS function can have function inside them.
+3. Lexical Scoping: The set of bindings visible inside a block is determined by the place of that block in the program text.
+ Each local scope can also see all the local scopes that contain it, and all scopes can see the global scope.
+ This approach to binding visibility is called lexical scoping.
+
+4. A function definition is a regular binding where the value of the binding is a function. For example, this code defines square to refer to a function that produces the square of a given number:
+
+const square = function(x) {
+  return x * x;
+};
+
+5. a binding that holds a function is still just a regular binding and can, if not constant, be assigned a new value, like so:
+
+let launchMissiles = function() {
+  missileSystem.launch("now");
+};
+if (safeMode) {
+  launchMissiles = function() {/* do nothing */};
+}
+
+6. Function Declaration:
+function square(x) {
+  return x * x;
+}
+
+console.log("The future says:", future());
+
+function future() {
+  return "You'll never have flying cars";
+}
+
+The preceding code works, even though the function is defined below the code that uses it.
+Function declarations are not part of the regular top-to-bottom flow of control. 
+They are conceptually moved to the top of their scope and can be used by all the code in that scope.
+
+7. Arrow Functions: 
+const power = (base, exponent) => {
+  let result = 1;
+  for (let count = 0; count < exponent; count++) {
+    result *= base;
+  }
+  return result;
+};
+
+const square1 = (x) => { return x * x; };
+const square2 = x => x * x;
+
+When an arrow function has no parameters at all, its parameter list is just an empty set of parentheses.
+
+const horn = () => {
+  console.log("Toot");
+};
+
+8. Optional Arguments: JavaScript is extremely broad-minded about the number of arguments you pass to a function. 
+If you pass too many, the extra ones are ignored. If you pass too few, the missing parameters get assigned the value undefined.
+
+We can also give default value to arguments.
+
+9. Closure: A closure is the combination of a function bundled together(enclosed) with references to its surrounding state(the lexical environment).
+In other words, a closure gives you access to an outer function's scope from an inner function. In JavaScript, closures are created every time a function
+is created, at funciton creation time.
+
+Nested functions have access to variable declared in their outer scope. 
