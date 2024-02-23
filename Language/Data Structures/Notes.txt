@@ -88,3 +88,16 @@ When the end index is not given slice will take all of the elements after the st
 The concat method can be used to glue arrays together to create a new array
 
 If we pass concat an argument that is not an array, that value will be added to the new array as if it were a one-element array.
+example07.js
+8. Strings and their properties: 
+slice: 
+indexOf: strings's indexOf can search for a string containing more than one character, wheares the corresponding array method looks only for a single element.
+
+trim(): removes whitespace (spaces, newlines, tabs and similar characters) from the start and end of a string.
+padStart(): takes the desired length and padding character as arguments
+
+split and join: 
+
+repeat(n): A string can be repeated with the repeat method, which creates a new string containing n copies of the original string, glued together.
+console.log("LA".repeat(3));
+// LALALA
