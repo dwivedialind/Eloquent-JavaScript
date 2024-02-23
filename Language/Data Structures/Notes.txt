@@ -106,4 +106,18 @@ console.log("LA".repeat(3));
 To write such a function, you put three dots before the function's last parameter.
 example09.js
 
+10. The Math Object 
+Math.random(): returns a new pseudorandom number between zero(inclusive) and one(exclusive) every time you call it.
+Math.floor(): rounds down to the nearest whole number
+Math.ceil(): rounds up to a whole number
+Math.round(): to the nearest whole number
+Math.abs(): it negates negative values but leaves positive ones as they are. 
+
+11. Destructuring: Using square brackets to "look inside" of the value, binding its contents.
+example10.js
+
+let {name} = {name: "Faraji", age:23};
+The curly braces on the left side '{name}' represent the pattern to destructure. It says, "Create a variable named 'name' and assign it the value of the property 'name' from the object on 
+the right.
+
 
