@@ -101,3 +101,9 @@ split and join:
 repeat(n): A string can be repeated with the repeat method, which creates a new string containing n copies of the original string, glued together.
 console.log("LA".repeat(3));
 // LALALA
+
+9. REST PARAMETERS: It can be useful for a function to accept any number of arguments. For example, Math.max computes the maximum of all the arguments it is given.
+To write such a function, you put three dots before the function's last parameter.
+example09.js
+
+
