@@ -120,4 +120,14 @@ let {name} = {name: "Faraji", age:23};
 The curly braces on the left side '{name}' represent the pattern to destructure. It says, "Create a variable named 'name' and assign it the value of the property 'name' from the object on 
 the right.
 
+JSON: A popular serialization format. Looks similar to JavaScript's way of writing arrays and objects, with a few restrictions. All property names have to be surrounded by double quotes, adn only simple data expression are allowed- no function calls, bindings, or anything that involve 
+actual computation. Comments are not allowed in JSON.
+{
+  "squirrel": false,
+  "events": ["work", "touched tree", "pizza", "running"]
+}
+
+JSON.stringify(): takes javascript value and returns a JSON-encoded string.
+JSON.parse(): takes JSON string and converts it to the value it encodes.
+
 
