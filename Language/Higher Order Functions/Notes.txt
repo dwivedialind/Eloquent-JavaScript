@@ -15,3 +15,4 @@ Abstraction over actions extends this idea to functions. Instead of creating fun
 There is built-in array method, forEach, that provides something like a for/of loop as a higher-order function.
 
 example01.js
+Filter function, rather than deleting elements from the existing array, builds up a new array with only the elements that pass the test. This function is pure. It does not modify the array it is given.

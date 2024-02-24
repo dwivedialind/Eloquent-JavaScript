@@ -1,3 +1,5 @@
+const SCRIPTS = require("./script");
+
 //functions that create new functions
 function greaterThan(n) {
     return m => m > n;
@@ -36,3 +38,7 @@ function unless(test, then) {
 
 
   ["A", "B"].forEach(l => console.log(l));
+
+  //Filter is a standard array method
+
+  console.log(SCRIPTS.filter(s=>s.direction=="ttb"));
