@@ -1,0 +1,4 @@
+1. Abstraction: Abstractions hide details and give us the ability to talk about problems at a higher level.
+2. Abstracting Repetition
+Pass function value as arguments
+example00.js
