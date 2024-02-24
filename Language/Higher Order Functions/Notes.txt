@@ -30,3 +30,30 @@ When summing numbers, you'd start with the number zero and, for each element, ad
 The parameters to reduce are, apart from the array, a combining function and a start value.
 If your array contains at least one element, you are allowed to leave off the start argument.
 
+6. Strings and Character codes
+some is another higher-order function. It takes a test function and tells you whether that function returns true for any of th elements in the array.
+example05.js
+Javascript strings are encoded as a sequence of 16-bit numbers. These are called code units. 
+To accommodate a broader range of characters, UTF-16 was introduced as the encoding format for JavaScript strings.
+
+UTF-16 describes most commonly used characters using a single 16-bit code unit (similar to the original design), but for certain characters, it uses a pair of two 16-bit code units.
+One potential source of confusion is that some programming languages, when working with UTF-16, may treat code units and characters as if they are the same thing. 
+
+Unfortunately, obvious operations on JavaScript strings, such as getting their length through the length property and accessing their content using square brackets, deal only with code units
+example06.js
+
+Javascript provides two methods for working with characters in strings:
+a. charCodeAt(index) Method:
+used to retrieve the Unicode code unit(integer) at a specific index in a string.
+It returns the UTF-16 code unit value of the character at the specified index.
+
+b. codePointAt(index) Method:
+similar to charCodeAt but returns the full unicode code point for the character at specified index
+It provides a way to handle characters represented by two UTF-16 code units.
+example06.js
+
+7. Recognizing Text:
+countBy function excepts a collection(anything that we can loop over with for/of) and a function that computes a group name for a given element. It returns an array of objects, each of which names a group and tells you the number of elements that were found in that group.
+example07.js
+
+findIndex function is array method. This method is somewhat like indexOf, but instead of looking for a specific value, it finds the first value for which the given function returns ture. Like indexOf, it returns -1 when no such element is found.
