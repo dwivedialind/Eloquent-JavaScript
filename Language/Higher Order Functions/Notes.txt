@@ -2,3 +2,16 @@
 2. Abstracting Repetition
 Pass function value as arguments
 example00.js
+
+3. Functions that operate on other functions, either by taking them as arguments or by returning them, are called
+higher-order functions. Functions are regular values.
+
+Higher-order functions allow us to abstract over actions, not just values.
+Abstraction in the context of higher-order functions means creating functions that can work with different values or actions
+without specifying them explicitly.
+When we talk about abstraction over values, we mean creating functions that can operate on different data values without specifying those values explicitly.
+Abstraction over actions extends this idea to functions. Instead of creating functions that work with specific actions, we create higher-order functions that can operate on different actions. 
+
+There is built-in array method, forEach, that provides something like a for/of loop as a higher-order function.
+
+example01.js
