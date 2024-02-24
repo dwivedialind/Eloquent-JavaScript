@@ -42,3 +42,7 @@ function unless(test, then) {
   //Filter is a standard array method
 
   console.log(SCRIPTS.filter(s=>s.direction=="ttb"));
+
+  //filter for year below 1500
+
+  console.log(SCRIPTS.filter(s => s.year <= 1500).length);
